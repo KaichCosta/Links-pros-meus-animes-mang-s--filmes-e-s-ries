@@ -1,1 +1,66 @@
 @charset "UTF-8";
+.carrossel{
+    width: 500px;
+    height: 300px;
+
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+.carrossel-imagens{
+    display: flex;
+    animation: slide 15s infinite;
+}
+
+.carrossel-imagens img{
+    width: 500px;
+    height: 300px;
+    flex-shrink: 0; /* Evita que as imagens sejam comprimidas */
+}
+
+/* Animação para o carrossel */
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    20% { transform: translateX(-100%); } /* Move para a segunda imagem */
+    40% { transform: translateX(-200%); } /* Move para a terceira imagem */
+    60% { transform: translateX(-300%); } /* Move para a quarta imagem */
+    80% { transform: translateX(-400%); } /* Move para a quinta imagem */
+    100% { transform: translateX(-500%); }  /* Vai da quinta imagem pra primeira imagem */
+    0% { transform: translateX(0%); }
+
+}
+
+.carrossel-manga{
+    width: 300px;
+    height: 500px;
+
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+.carrossel-manga-imagens{
+    display: flex;
+    animation: slide 15s infinite;
+}
+
+.carrossel-manga-imagens img{
+    width: 300px;
+    height: 500px;
+    flex-shrink: 0; /* Evita que as imagens sejam comprimidas */
+}
+
+/* Animação para o carrossel */
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    20% { transform: translateX(-100%); } /* Move para a segunda imagem */
+    40% { transform: translateX(-200%); } /* Move para a terceira imagem */
+    60% { transform: translateX(-300%); } /* Move para a quarta imagem */
+    80% { transform: translateX(-400%); } /* Move para a quinta imagem */
+    100% { transform: translateX(-500%); }  /* Vai da quinta imagem pra primeira imagem */
+    0% { transform: translateX(0%); }
+
+}
