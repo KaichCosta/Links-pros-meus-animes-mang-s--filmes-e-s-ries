@@ -64,7 +64,9 @@
     0% { transform: translateX(0%); }
 
 }
-/*parte do animes-page*/
+/*=========================
+\    parte do animes-page  |
+=========================*/
 #animes-page body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -74,25 +76,30 @@
 
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 16px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 10px;
+    padding: 0px;
+    max-width: 1540px;
+    margin: 5px;
 }
 
 .gallery-item {
-    background-color: #fff;
+    background-color: #1c84b4;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s 
+    ease;
+    padding: 8px;
 }
 
 .gallery-item img {
-    width: 100%;
-    height: auto;
+    
     display: block;
+    width: 500px;
+    height: 300px;
+    object-fit: cover; /* Garante que a imagem preencha o contêiner */
+    flex-shrink: 0;
 }
 
 .gallery-item:hover {
