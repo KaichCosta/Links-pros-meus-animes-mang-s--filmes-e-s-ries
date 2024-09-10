@@ -64,40 +64,60 @@
     0% { transform: translateX(0%); }
 
 }
+
+/*=============================
+\    parte da variaveis de cor|
+=============================*/
+
+:root{
+    --corfundo: #001e31;
+    --cor1: #8bcef5;
+    --cor2: #009bf5;
+    --cor3: #0c31a0;
+    --cor4: #0f276e;
+    --cor5: #0b1b4d;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, Sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
 /*=========================
 \    parte do animes-page  |
 =========================*/
-#animes-page body {
+body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #200707;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--corfundo);
 }
 
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 10px;
-    padding: 0px;
-    max-width: 1540px;
-    margin: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 5px;
+    max-width: 1350px;
+    margin: auto;
+    
 }
 
 .gallery-item {
-    background-color: #1c84b4;
+    background-color: var(--cor5);
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.5s 
     ease;
-    padding: 8px;
+    padding: 2px 2px 5px 2px;
+    box-shadow: 1px 2px 2px black;
 }
 
 .gallery-item img {
-    
-    display: block;
-    width: 500px;
-    height: 300px;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    max-height: 190px;
     object-fit: cover; /* Garante que a imagem preencha o contêiner */
     flex-shrink: 0;
 }
@@ -106,19 +126,44 @@
     transform: translateY(-5px);
 }
 
-.gallery-item .info {
-    padding: 15px;
+.gallery-item .descricao {
+    padding: 0px;
+    text-align: center;
 }
 
-.gallery-item .info h3 {
-    margin: 0;
-    font-size: 18px;
-    color: #333;
+.gallery-item .descricao h3 {
+    text-align: center;
+    margin: 3px;
+    font-size: 1em;
+    color: white;
     font-weight: bold;
 }
 
-.gallery-item .info p {
-    margin: 8px 0 0;
+.gallery-item .descricao a {
+
+    margin: 8px;
     font-size: 14px;
-    color: #666;
+    color: var(--cor1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+a>p{
+    display: inline;
+
+}
+.animesroll{
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+}
+a>p:hover{
+    text-decoration: underline 
+}
+.rinecloud{
+    font-weight: bold;
+    color: rgb(0, 255, 0);
+}
+.anitube{
+    font-weight: bold;
+    color: rgb(255, 230, 0);
 }
