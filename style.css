@@ -167,3 +167,11 @@ a>p:hover{
     font-weight: bold;
     color: rgb(255, 230, 0);
 }
+
+/*==============
+    footer
+==============*/
+footer{
+    background-color: #009bf5;
+    background-image: linear-gradient(bottom white black);
+}
