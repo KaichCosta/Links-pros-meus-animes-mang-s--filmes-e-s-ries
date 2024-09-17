@@ -1,4 +1,27 @@
 @charset "UTF-8";
+
+h1{
+
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 4px 6px rgba(2, 86, 196, 0.733);
+    color: var(--cor2);
+}
+
+h2{
+    text-align: center;
+    text-shadow: 2px 2px 4px rgb(5, 125, 194);
+}
+
+h2 > a{
+    color: var(--cor1);
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .carrossel{
     width: 500px;
     height: 300px;
@@ -172,6 +195,30 @@ a>p:hover{
     footer
 ==============*/
 footer{
-    background-color: #009bf5;
-    background-image: linear-gradient(bottom white black);
+    display: block;
+    background-image: linear-gradient(to bottom, var(--corfundo),var(--corfundo), var(--cor5), var(--cor4));
 }
+footer>p{
+    text-align: center;
+    padding: 0px;
+    color: white;
+}
+.sugestão{
+    text-align: left;
+    font-size: .7em;
+    color: #c5cbdf;
+}
+
+p{
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: var(--cor2);
+
+}
+
+.insta{
+    color: var(--cor2);
+}
+
