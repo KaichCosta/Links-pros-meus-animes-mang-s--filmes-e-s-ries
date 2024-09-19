@@ -1,5 +1,7 @@
 @charset "UTF-8";
-
+/*  =================
+    \PÁGINA INICIAL\
+    ================  */
 h1{
 
     font-size: 3em;
@@ -21,6 +23,11 @@ h2 > a{
     font-size: 1.5em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+h4{
+    color: var(--cor1);
+}
+
 
 .carrossel{
     width: 500px;
@@ -104,9 +111,11 @@ h2 > a{
     --fonte-destaque: 'Bebas Neue', cursive;
     --fonte-android: 'Android', cursive;
 }
-/*=========================
-\    parte do animes-page  |
-=========================*/
+
+
+/*  ============================================
+    \parte do animes,series e filmes-page caixa|
+    ===========================================   */
 body {
     font-family: Arial, sans-serif;
     margin: 0px;
@@ -171,24 +180,32 @@ body {
     text-decoration: none;
 }
 
-a>p{
-    display: inline;
+/*  ===========================================
+    |parte que FICA NA DIV e abaixo da imagem|
+    ==========================================  */
 
-}
+
 .animesroll{
     font-weight: bold;
     color: rgb(255, 0, 0);
+    margin-top: 0px;
+    margin-bottom: 3px;
 }
-a>p:hover{
-    text-decoration: underline 
-}
+
 .rinecloud{
     font-weight: bold;
     color: rgb(0, 255, 0);
+    margin-top: 0px;
+    margin-bottom: 3px;
 }
 .anitube{
     font-weight: bold;
     color: rgb(255, 230, 0);
+    margin-bottom: 3px;
+}
+
+a>p:hover{
+    text-decoration: underline 
 }
 
 /*==============
@@ -209,6 +226,8 @@ footer>p{
     color: #c5cbdf;
 }
 
+
+
 p{
     text-align: center;
     text-decoration: none;
@@ -218,7 +237,8 @@ p{
 
 }
 
-.insta{
+.github{
     color: var(--cor2);
+    ;
 }
 
