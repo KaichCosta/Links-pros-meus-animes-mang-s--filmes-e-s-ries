@@ -24,11 +24,6 @@ h2 > a{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-h4{
-    color: var(--cor1);
-}
-
-
 .carrossel{
     width: 500px;
     height: 300px;
@@ -184,28 +179,57 @@ body {
     |parte que FICA NA DIV e abaixo da imagem|
     ==========================================  */
 
+    h4{
+        color: var(--cor1);
+        padding: 0px;
+        margin: 0px;
+    }
+    
 
 .animesroll{
     font-weight: bold;
     color: rgb(255, 0, 0);
     margin-top: 0px;
-    margin-bottom: 3px;
+    margin-bottom: 0px;
+    padding-top: 0px;
 }
 
 .rinecloud{
     font-weight: bold;
     color: rgb(0, 255, 0);
     margin-top: 0px;
-    margin-bottom: 3px;
+    margin-bottom: 0px;
+    padding-top: 0px;
 }
 .anitube{
     font-weight: bold;
     color: rgb(255, 230, 0);
-    margin-bottom: 3px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+
+.animefire{
+    font-weight: bold;
+    color: rgb(174, 0, 255);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
 }
 
 a>p:hover{
     text-decoration: underline 
+}
+
+/*=============================
+parte da volta pra tela inicial
+===============================*/
+
+.link-volta{
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor2);
+    padding-top: 50px;
 }
 
 /*==============
@@ -217,28 +241,41 @@ footer{
 }
 footer>p{
     text-align: center;
-    padding: 0px;
+    padding: 10px;
     color: white;
+    font-size: .8em;
+
 }
 .sugestão{
+    display: block;
     text-align: left;
     font-size: .7em;
     color: #c5cbdf;
+    padding-bottom: 0px;
+    padding-left: 95px;
 }
 
+.sugestão > a{
+    color: var(--cor1);
 
+}
 
-p{
-    text-align: center;
+.sugestão > a:hover{
+    background-color: var(--cor1);
+    color: black;
+    padding-left: 6px;
+}
+
+/*.github{
+    color: var(--cor2);
+    text-align: right;
+    display: block;
     text-decoration: none;
-    display: flex;
-    justify-content: center;
-    color: var(--cor2);
-
+    padding-right: 95px;
 }
+*/
+img{
 
-.github{
-    color: var(--cor2);
-    ;
+    margin: right;
 }
 
